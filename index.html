@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split GPX/Merge GPX Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f5ff;
+            color: #333;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: #2c5282;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #718096;
+            font-size: 1.1rem;
+        }
+        
+        h2 {
+            color: #2c5282;
+            font-size: 1.8rem;
+            margin: 30px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .faq-container {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .faq-item {
+            background-color: #f8fafc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c5282;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        
+        .answer {
+            color: #4a5568;
+        }
+        
+        .contact-section {
+            background-color: #ebf4ff;
+            border-radius: 8px;
+            padding: 30px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .contact-section p {
+            margin-bottom: 20px;
+        }
+        
+        .contact-button {
+            display: inline-block;
+            background-color: #4299e1;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        
+        .contact-button:hover {
+            background-color: #3182ce;
+        }
+        
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #4299e1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        footer a:hover {
+            color: #2c5282;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Split GPX and Merge GPX iOS Support page</h1>
+            <p class="subtitle">Find answers to frequently asked questions or send me an email</p>
+        </header>
+        
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <p class="question">[Split GPX] How can I get my route onto my GPS watch/navigator/device?</p>
+                <p class="answer">Open the files you exported using the "Files" app on iOS, then export them using the share button into the app you are using to connect to your GPS device (with garmin devices that is "Garmin connect".</p>
+            </div>
+            
+<div class="faq-item">
+                <p class="question">[Split GPX] How can I split a route into asymetric chunks in Split GPX(different lengths per segment)?</p>
+                <p class="answer">To create asymmetric segments (different lengths), first split your route into larger segments. Then re-import specific segments and split them again. For example, if main_route.gpx is initially split into main_route_S1.gpx, main_route_S2.gpx, etc., you can further divide main_route_S2.gpx into main_route_S2_S1.gpx and main_route_S2_S2.gpx. Simply use these smaller segments in place of the original larger segment.</p>
+            </div>
+            
+            
+            <div class="faq-item">
+                <p class="question">[Split GPX] Id like to stop seeing my location in Split GPX, how do I turn it off?</p>
+                <p class="answer">To disable/change location services for Split GPX: Go to Settings - Privacy and Security - Location Services. Scroll to find "Split GPX", click on it.
+		Select "Never" to completely disable location access. You can also choose other options like "Ask Next Time Or When I Share" or "While Using the App" if you want limited location access instead of completely disabling it.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="question">[Split GPX] Im dealing with an extremly large file (100+ Megabytes), Split GPX seems to be frozen / saving the segments takes a long time.</p>
+                <p class="answer">Using the traditional Map view speeds things up a bit, however when working with 1000+ segments saving them might take along time, please have patience. The app might seem frozen when loading the map or saving the segments but is actually just processing your request.</p>
+            </div>
+            
+	    <div class="faq-item">
+                <p class="question">Im not sure if I will like it, i'd like to try it out first, can I get a trial version?</p>
+                <p class="answer">Send me an email!</p>
+            </div>
+        </div>
+        
+        <div class="contact-section">
+            <h2>Still Have Questions?</h2>
+            <p> I try to respond to emails the same day, but this is sometimes not possible (in part due to timezones).</p>
+            <a href="mailto:garazraz@outlook.com?subject=[SplitGPX/MergeGPX] <Your subject>" class="contact-button">Contact me</a>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Split GPX. All rights reserved.</p>
+            <p>&copy; 2025 Merge GPX. All rights reserved.</p>
+            <p><a href="privacy_policy">Privacy Policy</a></p>
+        </footer>
+    </div>
+</body>
+</html>
+
