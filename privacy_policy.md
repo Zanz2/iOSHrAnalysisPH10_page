@@ -1,3 +1,5 @@
+**English** | [Deutsch](de/privacy_policy) | [中文](zh/privacy_policy) | [한국어](ko/privacy_policy) | [日本語](ja/privacy_policy)
+
 # Privacy Policy for ECG & HRV Insights Polar H10
 
 **Effective Date: August 19, 2025**
@@ -59,4 +61,6 @@ If you have any questions about this Privacy Policy, please contact us at (inclu
 ## App Store Requirement Notice
 
 This Privacy Policy is provided to comply with Apple App Store requirements. Even though we don't collect any data, Apple requires all apps to have a privacy policy.
+
+[← Back to FAQ](index.html)
 
